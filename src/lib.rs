@@ -2,7 +2,7 @@
 extern crate ruru;
 use ruru::{AnyObject, Boolean, Class, Fixnum, RString, VM};
 use ruru::types::Argc;
-
+// Really from the examples
 #[no_mangle]
 pub extern fn initialize_rust_color() {
     methods!(
@@ -25,4 +25,3 @@ pub extern fn initialize_rust_color() {
         itself.def("length_equals?", string_length_equals);
     });
 }
-//}
